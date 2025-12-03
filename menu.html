@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Static Version</title>
+
+    <!-- External Bootstrap + Icons (UI looks same) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+    <style>
+        /* ======= GLOBAL CSS ======= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body {
+            background-image: url('images/background2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        /* ======= NAVBAR ======= */
+        .navbar {
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+        }
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+        
+        nav a {
+            text-decoration: none;
+            padding: 6px 20px;
+            color: whitesmoke;
+            font-weight: 500;
+            font-size: 1.1em;
+            position: relative;
+            transition: .5s;
+        }
+        nav a:hover {
+            color: #0ef;
+        }
+
+        nav a span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-bottom: 2px solid #0ef;
+            border-radius: 15px;
+            transform: scale(0) translateY(50px);
+            opacity: 0;
+            transition: .5s;
+        }        
+
+        nav a:hover span{
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }   
+        .logo {
+            width: 150px;
+        }
+
+        /* ===== PRODUCT CARDS ===== */
+        .card {
+            border-radius: 10px;
+            border: 2px solid #ddd;
+        }
+        .card img {
+            border-radius: 10px 10px 0 0;
+        }
+        .card-title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container1">
+<!-- ======= NAVBAR UI SAME AS BEFORE ======= -->
+<div class="navbar">
+    <img src="logos/mainlogo1.png" class="logo">
+    <nav>
+        
+            <a href="index.html">Home<span></span></a>
+            <a href="menu.html">Menu<span></span></a>
+            <a href="contact.html">Feedback<span></span></a>
+            <a href="registration.html">Registration<span></span></a>
+            <a href="login.html">Login<span></span></a>
+        
+    </nav>
+</div>
+
+<!-- ======= PAGE TITLE ======= -->
+<h1 class="text-center text-light mt-4" style="font-weight:700; text-shadow:2px 2px 8px black;">
+    Menu
+</h1>
+
+<!-- ======= PRODUCT LIST STATICALLY ======= -->
+<div class="container mt-4">
+
+    <div class="row">
+
+        <!-- ================== PRODUCT 1 =================== -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card p-2">
+                <img src="images\idli.jpg" class="card-img-top" height="250">
+                <div class="card-body">
+                    <h4 class="card-title text-center text-info">Idli</h4>
+                    <h5 class="text-center text-danger"><i class="fas fa-rupee-sign"></i> ₹ 35.00/-</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== PRODUCT 2 =================== -->
+         <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card p-2">
+                <img src="images\podiidli.jpg" class="card-img-top" height="250">
+                <div class="card-body">
+                    <h4 class="card-title text-center text-info">Podi Idli</h4>
+                    <h5 class="text-center text-danger"><i class="fas fa-rupee-sign"></i> ₹ 40.00/-</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== PRODUCT 3 =================== -->
+         <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card p-2">
+                <img src="images\idlicrumbs.jpeg" class="card-img-top" height="250">
+                <div class="card-body">
+                    <h4 class="card-title text-center text-info">Idli Crumbs</h4>
+                    <h5 class="text-center text-danger"><i class="fas fa-rupee-sign"></i> ₹ 40.00/-</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== PRODUCT 4 =================== -->
+         <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card p-2">
+                <img src="images\appe.jpg" class="card-img-top" height="250">
+                <div class="card-body">
+                    <h4 class="card-title text-center text-info">Appe</h4>
+                    <h5 class="text-center text-danger"><i class="fas fa-rupee-sign"></i> ₹ 30.00/-</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== PRODUCT 5 =================== -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card p-2">
+                <img src="images\meduvada.jpg" class="card-img-top" height="250">
+                <div class="card-body">
+                    <h4 class="card-title text-center text-info">Medu Vada</h4>
+                    <h5 class="text-center text-danger"><i class="fas fa-rupee-sign"></i> ₹ 40.00/-</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== PRODUCT 6 =================== -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card p-2">
+                <img src="images\mix.jpg" class="card-img-top" height="250">
+                <div class="card-body">
+                    <h4 class="card-title text-center text-info">Idli and Vada</h4>
+                    <h5 class="text-center text-danger"><i class="fas fa-rupee-sign"></i> ₹ 40.00/-</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== PRODUCT 8 =================== -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card p-2">
+                <img src="images\dosa.jpg" class="card-img-top" height="250">
+                <div class="card-body">
+                    <h4 class="card-title text-center text-info">Dosa</h4>
+                    <h5 class="text-center text-danger"><i class="fas fa-rupee-sign"></i> ₹ 35.00/-</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== PRODUCT 9 =================== -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card p-2">
+                <img src="images\masaladosa.jpg" class="card-img-top" height="250">
+                <div class="card-body">
+                    <h4 class="card-title text-center text-info">Masala Dosa</h4>
+                    <h5 class="text-center text-danger"><i class="fas fa-rupee-sign"></i> ₹ 40.00/-</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== PRODUCT 10 =================== -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card p-2">
+                <img src="images\spongedosa.jpg" class="card-img-top" height="250">
+                <div class="card-body">
+                    <h4 class="card-title text-center text-info">Sponge Dosa</h4>
+                    <h5 class="text-center text-danger"><i class="fas fa-rupee-sign"></i> ₹ 40.00/-</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== PRODUCT 11 =================== -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card p-2">
+                <img src="images\uttappam.jpeg" class="card-img-top" height="250">
+                <div class="card-body">
+                    <h4 class="card-title text-center text-info">uttappam</h4>
+                    <h5 class="text-center text-danger"><i class="fas fa-rupee-sign"></i> ₹ 50.00/-</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== PRODUCT 12 =================== -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card p-2">
+                <img src="images\tea.png" class="card-img-top" height="250">
+                <div class="card-body">
+                    <h4 class="card-title text-center text-info">Tea/h4>
+                    <h5 class="text-center text-danger"><i class="fas fa-rupee-sign"></i> ₹ 10.00/-</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================== PRODUCT 13 =================== -->
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="card p-2">
+                <img src="images\cofee.jpg" class="card-img-top" height="250">
+                <div class="card-body">
+                    <h4 class="card-title text-center text-info">Coffee</h4>
+                    <h5 class="text-center text-danger"><i class="fas fa-rupee-sign"></i> ₹ 20.00/-</h5>
+                </div>
+            </div>
+        </div>
+         
+        <!-- ================== BUN ITEMS ROW =================== -->
+<div class="row w-100 justify-content-center">
+    <!-- Bun Maska -->
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+        <div class="card p-2">
+            <img src="images\bunmaska.jpg" class="card-img-top" height="250">
+            <div class="card-body">
+                <h4 class="card-title text-center text-info">Bun Maska</h4>
+                <h5 class="text-center text-danger">
+                    <i class="fas fa-rupee-sign"></i> ₹ 20.00/-
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bun Jam -->
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+        <div class="card p-2">
+            <img src="images\bunjam.jpg" class="card-img-top" height="250">
+            <div class="card-body">
+                <h4 class="card-title text-center text-info">Bun Jam</h4>
+                <h5 class="text-center text-danger">
+                    <i class="fas fa-rupee-sign"></i> ₹ 20.00/-
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- ⭐ Add more products here exactly same like above ⭐ -->
+
+    </div>
+</div>
+</div>
+</body>
+</html>

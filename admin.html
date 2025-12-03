@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="stylelogin1.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url('images/background2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container1">
+     <div class="navbar">
+    <img src="logos/mainlogo1.png" class="logo">
+    <nav>
+        
+            <a href="index.html">Home<span></span></a>
+            <a href="menu.html">Menu<span></span></a>
+            <a href="contact.html">Feedback<span></span></a>
+            <a href="registration.html">Registration<span></span></a>
+            <a href="login.html">Login<span></span></a>
+        
+    </nav>
+</div>
+</br></br></br></br>
+
+    <div class="ACCOUNT-page">
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-2">
+                <img src="images/image1.png.jpeg" width="100%">
+            </div> -->
+            <div class="col-2">
+            <div class="form-container">
+                <div class="form-btn">
+                    <span onclick="register()">Admin Login</span>
+                  
+                </div>
+               
+                <form action="adminlogin.php
+                " method="post">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                     <button type="Submit" name="submit" class="btn">Login</button>
+                     <a href="">Forgot Password</a>
+                </form>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
